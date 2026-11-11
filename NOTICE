@@ -1,0 +1,26 @@
+i30 PD AVN Modifying
+Project-authored Python/Java source, tests and documentation: MIT License.
+
+This is independent research, not an official Hyundai product. Product names
+identify interoperability targets; no affiliation or endorsement is implied.
+
+No OEM firmware, decompiled implementation, extracted APK, automotive shared
+library, platform key, vehicle backup, voice recording, artwork, device ID or
+raw vehicle log is distributed in this repository.
+
+chime/compile-stubs/src contains minimal, project-authored API declarations
+needed to compile against the installed vehicle's automotive library. These
+declarations contain no OEM implementation and are excluded from APK/D8 program
+inputs. They do not grant rights to the separate OEM firmware or library.
+
+External tools/dependencies are installed separately, not vendored:
+- Pillow: HPND and individual component licenses; https://python-pillow.github.io/
+- NumPy: BSD-3-Clause; https://numpy.org/doc/stable/license.html
+- Python: PSF License; https://docs.python.org/3/license.html
+- Android SDK/build tools: their respective SDK/AOSP licenses and terms.
+  https://developer.android.com/studio/terms
+- OpenJDK/JDK: the license of the separately installed distribution.
+
+MIT coverage does not extend to users' input media, images, OEM binaries,
+third-party tools or signing material. Users must supply their own permitted
+assets and retain the applicable notices for any separately obtained material.
